@@ -217,7 +217,7 @@ return [
     ],
     'Taranto' => [
         'shirt-team' => [
-            'tar-away' => 'EYE-GAME---Taranto-Away-Front.png',
+            // 'tar-away' => 'EYE-GAME---Taranto-Away-Front.png',
             'tar-home' => 'EYE-GAME---Taranto-Home-Front.png',
         ],
         'player-team' => [

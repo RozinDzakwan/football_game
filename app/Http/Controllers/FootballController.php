@@ -22,7 +22,6 @@ class FootballController extends Controller
         $data_teams = config('football-game');
         if (!empty(User::getByEmail(ScCookies::getFunctionalCookie('email'))) && ScCookies::getFunctionalCookie('email') != false) {
             $data_cookie = User::getByEmail(ScCookies::getFunctionalCookie('email'))->toArray();
-            // dd($data_cookie);
         } else {
             $data_cookies = [
                 'id',
@@ -46,6 +45,7 @@ class FootballController extends Controller
 
     public function playGame(Request $request)
     {
+        dd($request->all());
         //parse name and number player
         $data_teams = config('football-game');
         if ($request->number_custom != null && $request->name_custom != null) {
